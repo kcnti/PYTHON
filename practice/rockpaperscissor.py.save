@@ -1,0 +1,11 @@
+import random
+rps = ['rock','paper','scissor']
+while(True):
+	C:\Users\User\AppData\Local\Programs\Python\Python38-32
+	for i in rps:
+		if me == i:
+			print('you win!')
+		else:
+			print('you lose')
+	if me == "q":
+		break

@@ -1,0 +1,5 @@
+values = input("Type the value to put into list and tuple ,seperate by number: ")
+lst = values.split(",")
+tupl = tuple(lst)
+print('List :',lst)
+print('Tuple :',tupl)

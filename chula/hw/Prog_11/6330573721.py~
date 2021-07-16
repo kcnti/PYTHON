@@ -1,0 +1,25 @@
+import json
+data = json.load(open('th_weather_39.json'))
+# data["key"]["list"]["main"] access to information
+#                    ["weather"]
+#                    ["clouds"]
+#                    ["wind"]
+#            ["city"]["name"]
+#                    ["region"]
+
+#for i in data:
+#    for j in data[i]['list']:
+#        print(j['dt'])
+#        break
+#    break
+
+def top_K_max_temp_by_region(data, K):
+    info = []
+    result = {}
+#    for i in data:
+#        result[data[i]['city']['name']] = data[i]['list'][0]['main']['temp']
+    for i in data:
+        info.append([data[i]['list'][0]['main']['temp'], data[i]['city']['name'], data[i]['list'][0]['dt_txt']])
+    info.sort()
+    print(result)
+print(top_K_max_temp_by_region(data, 2))

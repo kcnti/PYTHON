@@ -1,0 +1,13 @@
+def to_gray(img):
+    res = []
+    for i in img:
+        average = 0
+        temp = []
+        for j in i:
+            for k in j:
+                average+=k
+            temp.append(int(average/3))
+        res.append(temp)
+    return res
+
+exec(input().strip())

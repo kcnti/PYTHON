@@ -1,0 +1,9 @@
+text = input()
+lst = []
+for i in text:
+    lst.append(i)
+    if i in lst:
+        print("false")
+    else:
+        print("true")
+
