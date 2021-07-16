@@ -1,7 +1,0 @@
-def reverse(d):
-    return {value: key for key,value in d.items()}
-
-def keys(d, v):
-    return list({key: value for key, value in d.items() if value == v})
-
-print(reverse({3:"A", 2:"B"}) == {"A":3, "B":2})

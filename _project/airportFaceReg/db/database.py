@@ -8,7 +8,7 @@ def insert():
         cnx = mysql.connector.connect(
             host='178.128.58.79',
             user='project',
-            password='Kikuanone1234!',
+            password='password!',
             database='project'
         )
         _id = cnx.cursor()
@@ -44,7 +44,7 @@ def queryDB():
     global _fname, _lname, _gate, _terminal, _seat
     cnx = mysql.connector.connect(  host='178.128.58.79',
                                 user='project',
-                                password='Kikuanone1234!',
+                                password='!',
                                 database='project'  )
     cursor = cnx.cursor()
     query = ("SELECT firstname, lastname, gate, terminal, seat FROM info")
